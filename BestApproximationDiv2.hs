@@ -4,8 +4,7 @@ import Data.List
 import Data.Maybe
 
 showResult :: (Int, Int, Int) -> String
-showResult (a, b, x) = show a ++ "/" ++ show b ++ " has "  
-                    ++ show x ++ " exact digits" 
+showResult (a, b, x) = concat [show a, "/", show b, " has ", show x, " exact digits"]
 
 compareDigits :: [Int] -> [Int] -> Ordering
 compareDigits xs [] = EQ
@@ -17,8 +16,8 @@ toDigit :: Char -> Int
 toDigit c = ord c - ord '0'
 
 preciseDivision :: Int -> Int -> [Int]
-preciseDivision a b = div a' b : preciseDivision (mod a' b) b
-           where a' = 10 * a
+preciseDivision a b = d : preciseDivision r b
+    where (d, r) = divMod (10 * a) b
 
 estimate :: [Int] -> Double
 estimate = sum . zipWith (flip (/)) (iterate (*10) 10) . 
