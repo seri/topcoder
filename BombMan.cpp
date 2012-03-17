@@ -12,8 +12,10 @@ bool operator < (Node const &p, Node const &q) {
 }
 
 int shortestPath(vector<string> const &maze, int bombs) {
-    int h = maze.size(), w = maze[0].size();
-    int x0, y0;
+    int h = maze.size(), 
+        w = maze[0].size(),
+        x0, y0;
+
     for (int y = 0; y != h; ++y) {
         for (int x = 0; x != w; ++x) {
             if (maze[y][x] == 'B') {
@@ -24,14 +26,14 @@ int shortestPath(vector<string> const &maze, int bombs) {
     }
 
     priority_queue<Node> nodes;
-    Node init = {x0, y1, bombs, 0};
+    Node init = {x0, y0, bombs, 0};
     nodes.push(init);
 
     bool done[h][w][bombs + 1]; 
     memset(done, false, sizeof(done));
 
-    int dx[] = {-1, 1,  0, 0};
-    int dy[] = { 0, 0, -1, 1};
+    int dx[] = {-1, 1,  0, 0},
+        dy[] = { 0, 0, -1, 1};
 
     while (!nodes.empty()) {
         Node cur = nodes.top(); nodes.pop();
