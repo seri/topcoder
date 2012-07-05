@@ -9,7 +9,6 @@ These solutions are written in my own time (that means: not during contest) so I
 - D1L1 = Division 1 - 250 points
 - D1L2 = Division 1 - 500 points
 - D1L3 = Division 1 - 1000 points
-
 - D2L1 = Division 2 - 250 points
 - D2L2 = Division 2 - 500 points
 - D2L3 = Division 2 - 1000 points
