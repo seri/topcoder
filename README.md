@@ -6,6 +6,45 @@ The problem statement for each solution can be found at [TopCoder Problem Archie
 
 These solutions are written in my own time (that means: not during contest) so I try to make them as clean as clear as possible.
 
+<table>
+    <thead>
+        <th>Directory</th>
+        <th>Division</th>
+        <th>Level</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>D1L1</td>
+            <td>1</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>D1L2</td>
+            <td>1</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>D1L3</td>
+            <td>1</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>D2L1</td>
+            <td>2</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>D2L2</td>
+            <td>2</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>D2L3</td>
+            <td>2</td>
+            <td>1000</td>
+        </tr>
+    </tbody>
+</table>
 - D1L1 = Division 1 - 250 points
 - D1L2 = Division 1 - 500 points
 - D1L3 = Division 1 - 1000 points
