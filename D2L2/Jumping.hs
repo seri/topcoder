@@ -10,6 +10,7 @@ canReach :: Int -> Int -> Range -> Bool
 canReach x y (lo, hi) = z >= lo * lo && z <= hi * hi where
     z = x * x + y * y
 
+-- Draw circles to understand this code (hint: doughnut shape)
 jump :: Range -> Int -> Range
 jump (lo, hi) x | x <= lo   = (lo - x, hi + x)
                 | x <= hi   = (0     , hi + x)
